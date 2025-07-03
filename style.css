@@ -6,11 +6,15 @@ body {
     padding: 0;
 }
 
+section {
+    padding: 20px 30px;
+}
+
 nav ul {
     list-style-type: none;
     padding: 10px 20px;
     margin: 0;
-    background-color:     background-color: rgba(185, 98, 26, 0.71);
+    background-color: rgba(185, 98, 26, 0.71);
 
   }
   
@@ -31,24 +35,39 @@ nav a:hover{
     color: #000000;
 }
 
-.about-container {
+.home-container {
     display: flex;
     justify-content: center;
     gap: 10px;
     padding: 20px;
     align-items: center;
+    margin: 0 30px;
 }
-.about-image{
+.home-image{
     flex: 0;
 }
-.about-text{
+.home-text{
     flex: 1;
 }
 .headshot {
     width: 250px;
     height: 250px;
     border-radius: 50%;
+    object-position: top;
     object-fit: cover;
     display: block;
+
+}
+
+.about-images{
+    display: flex;
+    margin: 20px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-images img {
+    width: 250px;
 
 }
