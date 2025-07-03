@@ -1,11 +1,15 @@
 body {
     background-color:#000435;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    padding: 10px 20px;
+    margin: 0 20px;
     background-color: #002535;
   }
   
@@ -16,7 +20,12 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: #ffffff;
     padding: 10px 15px;
     display: inline-block;
+    transition: color 0.3s ease;
   }
+
+nav a:hover{
+    color: #400300;
+}
