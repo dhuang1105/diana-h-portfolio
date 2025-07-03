@@ -1,8 +1,12 @@
+body {
+    background-color:#000435;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    background-color: white;
+    background-color: #002535;
   }
   
 nav li {
