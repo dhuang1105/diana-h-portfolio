@@ -10,6 +10,7 @@ nav li {
 }
 nav a {
     color: black;
-    display: inline-block;
     text-decoration: none;
+    padding: 10px 10px;  
+    display: inline-block;
 }
