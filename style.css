@@ -24,14 +24,12 @@ h2 {
 nav ul {
     list-style-type: none;
     padding: 8px 20px;
-    margin: 0 30px;
+    margin: 0 50px;
     background-color: rgba(169, 81, 10, 0.25);
-
   }
   
 nav li {
     display: inline-block;
-    margin-right: 20px;
   }
 
 nav a {
@@ -51,7 +49,7 @@ nav a:hover{
     gap: 30px;
     padding: 20px;
     align-items: center;
-    margin: 0 50px;
+    margin: 0 70px;
 }
 .home-image{
     flex: 0;
