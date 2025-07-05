@@ -23,12 +23,13 @@ h2 {
 
 nav ul {
     list-style-type: none;
-    padding: 8px 20px;
-    margin: 0 50px;
+    padding: 0;
+    margin: 0;
     background-color: rgba(169, 81, 10, 0.25);
   }
   
 nav li {
+    margin: 0 60px;
     display: inline-block;
   }
 
@@ -89,7 +90,7 @@ h3 {
 }
 
 .about-images figure {
-    width: 250px;
+    width: 150px;
     padding: 0 20px;
     justify-content: center;
 }
