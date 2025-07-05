@@ -23,9 +23,9 @@ h2 {
 
 nav ul {
     list-style-type: none;
-    padding: 10px 20px;
+    padding: 8px 20px;
     margin: 0;
-    background-color: rgba(185, 98, 26, 0.25);
+    background-color: rgba(169, 81, 10, 0.25);
 
   }
   
@@ -73,6 +73,13 @@ nav a:hover{
 
 .all-text {
     margin: 30px;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .about-images{
@@ -85,4 +92,10 @@ nav a:hover{
 
 .about-images img {
     width: 250px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
