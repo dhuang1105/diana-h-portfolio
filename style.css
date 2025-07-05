@@ -10,11 +10,16 @@ section {
     padding: 20px 30px;
 }
 
+h2 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
 nav ul {
     list-style-type: none;
     padding: 10px 20px;
     margin: 0;
-    background-color: rgba(185, 98, 26, 0.71);
+    background-color: rgba(185, 98, 26, 0.25);
 
   }
   
@@ -47,12 +52,13 @@ nav a:hover{
 }
 .home-text{
     flex: 1;
+    min-width: 200px;
 }
 .headshot {
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
-    object-position: top;
+    object-position: justify;
     object-fit: cover;
     display: block;
 
@@ -67,6 +73,5 @@ nav a:hover{
 }
 
 .about-images img {
-    width: 100px;
-
+    width: 175px;
 }
