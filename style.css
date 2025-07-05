@@ -10,6 +10,12 @@ section {
     padding: 20px 30px;
 }
 
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 h2 {
     font-size: 16px;
     font-weight: normal;
@@ -45,7 +51,7 @@ nav a:hover{
     gap: 30px;
     padding: 20px;
     align-items: center;
-    margin: 0 30px;
+    margin: 0 50px;
 }
 .home-image{
     flex: 0;
@@ -53,6 +59,7 @@ nav a:hover{
 .home-text{
     flex: 1;
     min-width: 200px;
+    text-align: center;
 }
 .headshot {
     width: 350px;
@@ -64,6 +71,10 @@ nav a:hover{
 
 }
 
+.all-text {
+    margin: 30px;
+}
+
 .about-images{
     display: flex;
     margin: 20px;
@@ -73,5 +84,5 @@ nav a:hover{
 }
 
 .about-images img {
-    width: 175px;
+    width: 250px;
 }
