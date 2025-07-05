@@ -88,14 +88,15 @@ h3 {
     align-items: center;
 }
 
-.about-images img {
+.about-images figure {
     width: 250px;
     padding: 0 20px;
 }
 
-.about-images p{
+.about-images figcaption{
     text-align: right;
-    color:rgba(0, 0, 0, 0.172)
+    color:rgba(0, 0, 0, 0.172);
+    margin-top: 5px;
 }
 
 h4 {
