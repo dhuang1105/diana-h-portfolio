@@ -93,6 +93,11 @@ h3 {
     padding: 0 20px;
 }
 
+.about-images p{
+    text-align: right;
+    color:rgba(0, 0, 0, 0.172)
+}
+
 h4 {
     font-size: 20px;
     font-weight: bold;
