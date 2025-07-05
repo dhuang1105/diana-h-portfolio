@@ -47,7 +47,7 @@ nav a:hover{
 .home-container {
     display: flex;
     gap: 30px;
-    padding: 20px;
+    padding: 10px;
     align-items: center;
     margin: 0 70px;
 }
@@ -91,11 +91,13 @@ h3 {
 .about-images figure {
     width: 250px;
     padding: 0 20px;
+    align-items: center;
 }
 
 .about-images figcaption{
     text-align: right;
-    color:rgba(0, 0, 0, 0.172);
+    font-size: 10px;
+    color:rgb(77, 77, 77);
     margin-top: 5px;
 }
 
