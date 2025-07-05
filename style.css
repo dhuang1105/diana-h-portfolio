@@ -59,7 +59,6 @@ nav a:hover{
 .home-text{
     flex: 1;
     min-width: 200px;
-    text-align: center;
 }
 .headshot {
     width: 350px;
@@ -73,7 +72,7 @@ nav a:hover{
 
 .all-text {
     margin: 30px;
-    line-height: 1.2;
+    line-height: 1.5;
 }
 
 h3 {
