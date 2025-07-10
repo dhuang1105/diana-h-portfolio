@@ -119,9 +119,9 @@ h4 {
 
 .highlights-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: (1fr, 1fr);
     gap: 20px;
-    padding: 20px 40px;
+    padding: 35px 40px;
     align-items: center;
 }
 
@@ -129,4 +129,11 @@ h4 {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.highlights-grid .caption {
+    font-size: 15px;
+    color: rgba(77, 77, 77, 0.714);
+    line-height: 1.5;
+    padding: 10px;
 }
