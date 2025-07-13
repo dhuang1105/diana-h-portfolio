@@ -121,8 +121,13 @@ h4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    padding: 50px 0;
-    align-items: end;
+    padding: 30px 0;
+}
+
+.highlights-grid figure {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
 }
 
 .highlights-grid img {
@@ -131,8 +136,8 @@ h4 {
     display: block;
 }
 
-.highlights-caption {
+.highlights-grid figcaption {
     font-size: 15px;
     color: rgba(77, 77, 77, 0.714);
-    align-self: end;
+    margin-top: 8px;
 }
