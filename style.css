@@ -141,4 +141,6 @@ h4 {
     color: rgba(77, 77, 77, 0.714);
     margin-top: 8px;
     line-height: 1.4px;
+    word-wrap: break-word;
+    white-space: normal;
 }
