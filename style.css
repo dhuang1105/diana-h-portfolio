@@ -121,7 +121,7 @@ h4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 .highlights-grid figure {
@@ -132,8 +132,11 @@ h4 {
 
 .highlights-grid img {
     width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
     height: auto;
     display: block;
+
 }
 
 .highlights-grid figcaption {
