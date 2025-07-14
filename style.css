@@ -28,13 +28,12 @@ h2 {
 
 nav {
     display: flex;
+    justify-content: space-between;
     background-color: transparent;
     transition: background-color 0.3s ease;
-    width: 100%;
     z-index: 1000; /*Ensures the navbar is above other content*/
     position: fixed;
     top: 0;
-    justify-content: space-between;
 }
 
 nav.scrolled {
@@ -45,8 +44,12 @@ nav.scrolled a {
     color: #ffffff;
 }
 
-.nav-left ul {
+.nav-left, .nav-right {
     display: flex;
+    align-items: center;
+}
+
+.nav-left ul {
     list-style-type: none;
     gap: 20px;
     padding: 0;
@@ -56,6 +59,7 @@ nav.scrolled a {
   
 .nav-right ul {
     display: flex;
+    align-items: center;
     gap: 20px;
     padding: 0;
     padding-right: 40px;
@@ -64,18 +68,10 @@ nav.scrolled a {
 
 nav li {
     margin: 0 20px;
-    display: inline-block;
   }
 
-.nav-left a {
+nav a {
     text-decoration: none;
-    color: rgba(185, 98, 26);
-    padding: 10px 15px;
-    display: inline-block;
-    transition: color 0.3s ease;
-  }
-
-.nav-right a {
     color: rgba(185, 98, 26);
     padding: 10px 15px;
     display: inline-block;
