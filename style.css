@@ -27,10 +27,16 @@ h2 {
 }
 
 nav {
-    background-color: rgb(169, 82, 10);
+    background-color: transparent;
+    transition: background-color 0.3s ease;
     width: 100%;
+    z-index: 1000; /*Ensures the navbar is above other content*/
     position: fixed;
     top: 0;
+}
+
+nav.scrolled {
+    background-color: rgba(181, 84, 4, 0.75);
 }
 
 nav ul {
@@ -142,8 +148,6 @@ h4 {
 
 .highlights-grid img {
     width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
     height: auto;
 }
 
@@ -151,5 +155,5 @@ h4 {
     font-size: 15px;
     color: rgba(77, 77, 77, 0.714);
     margin-top: 8px;
-    line-height: 1;
+    line-height: 1.4;
 }
