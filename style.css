@@ -27,7 +27,7 @@ h2 {
 }
 
 nav {
-    background-color: rgba(169, 81, 10, 0.25);
+    background-color: rgb(169, 82, 10);
     width: 100%;
     position: fixed;
     top: 0;
@@ -63,7 +63,7 @@ nav a {
     gap: 30px;
     padding: 20px;
     align-items: center;
-    margin: 0 70px;
+    margin: 25px 70px;
 }
 .home-image{
     flex: 0;
@@ -151,7 +151,5 @@ h4 {
     font-size: 15px;
     color: rgba(77, 77, 77, 0.714);
     margin-top: 8px;
-    line-height: 1.4px;
-    word-wrap: break-word;
-    white-space: normal;
+    line-height: 1;
 }
