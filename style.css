@@ -53,16 +53,16 @@ nav.scrolled a {
 .nav-left ul {
     display: flex;
     list-style-type: none;
-    gap: 10px;
+    gap: 1px;
     padding: 0;
     padding-left: 40px;
-    margin: 40px;
+    margin: 0px;
   }
   
 .nav-right ul {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 1px;
     padding: 0;
     padding-right: 40px;
     margin: 0;

@@ -7,12 +7,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><!--link to font for icons-->
 </head>
 
+<script>
+    window.addEventListener('scroll', function () {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 25) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+</script>
+
 <body>
     <nav class="navbar">
         <div class="nav-left">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#highlights">Highlights</a></li>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#highlights">Highlights</a></li>
                 <li><a href="photography.html">Gallery</a></li>
                 <!--  <li><a href="#">Internships</a></li>
                 <li><a href="#">Research</a></li>
@@ -48,10 +59,13 @@
             </figure>
 
             <figure>
-                <img src="gallery/SepdaVTriforce.JPG" alt="SEPDA vs Triforce play">
-                <figcaption>Triforce attempts to D Philadelphia SEPDA</figcaption>
+                <img src="gallery/JP_D.JPG" alt="Colorbomb layout D attempt">
+                <figcaption>Phildelphia Colorbomb player attempts a layout D</figcaption>
             </figure>
 
-            
+            <figure>
+                <img src="gallery/McClintic.JPG" alt="Wissahicken layout">
+                <figcaption>Wissahicken High School player lays out to save the disc</figcaption>
+            </figure>
     </section>
 </body>
