@@ -36,7 +36,7 @@ nav {
 }
 
 nav.scrolled {
-    background-color: rgba(181, 84, 4, 0.75);
+    background-color: rgb(177, 98, 34);
 }
 
 nav.scrolled a {
@@ -71,9 +71,9 @@ nav a {
 .home-container {
     display: flex;
     gap: 30px;
-    padding: 20px;
+    padding: 40px 20px 0 0;
     align-items: center;
-    margin: 25px 70px;
+    margin: 0 70px;
 }
 .home-image{
     flex: 0;
