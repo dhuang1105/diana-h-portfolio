@@ -183,8 +183,31 @@ h4 {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat (4, 1fr);
+    gap: 30px;
+    padding: 30px;
+}
 
+.gallery-grid figure {
+    margin: 0;
+    text-align: center;
+}
+
+.gallery-grid img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    height: auto;
+}
+
+.gallery-grid figcaption {
+    opacity: 0;
+    font-size: 15px;
+    color: rgba(77, 77, 77, 0.714);
+    margin-top: 8px;
+    line-height: 1.4;
+}
+.gallery-grid figure:hover figcaption {
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
