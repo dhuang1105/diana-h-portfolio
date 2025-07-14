@@ -50,6 +50,7 @@ nav.scrolled a {
 }
 
 .nav-left ul {
+    display: flex;
     list-style-type: none;
     gap: 20px;
     padding: 0;
@@ -87,7 +88,7 @@ nav a:hover{
     gap: 30px;
     padding: 20px;
     align-items: center;
-    margin: 40px 70px 70px 0;
+    margin: 40px 70px 0;
 }
 .home-image{
     flex: 0;
