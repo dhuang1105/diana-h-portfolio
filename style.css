@@ -29,7 +29,7 @@ h2 {
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: transparent;
+    background-color: rgba(169, 81, 10, 0.25);
     transition: background-color 0.3s ease;
     z-index: 1000; /*Ensures the navbar is above other content*/
     position: fixed;
@@ -55,7 +55,6 @@ nav.scrolled a {
     padding: 0;
     padding-left: 40px;
     margin: 0;
-    background-color: rgba(169, 81, 10, 0.25);
   }
   
 .nav-right ul {
@@ -65,7 +64,6 @@ nav.scrolled a {
     padding: 0;
     padding-right: 40px;
     margin: 0;
-    background-color: rgba(169, 81, 10, 0.25);
   }
 
 nav li {
