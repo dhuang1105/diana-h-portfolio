@@ -39,6 +39,10 @@ nav.scrolled {
     background-color: rgba(181, 84, 4, 0.75);
 }
 
+nav.scrolled a {
+    color: #ffffff;
+}
+
 nav ul {
     list-style-type: none;
     padding: 10px 20px;
@@ -148,6 +152,8 @@ h4 {
 
 .highlights-grid img {
     width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
     height: auto;
 }
 
