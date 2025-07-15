@@ -102,8 +102,8 @@ nav a:hover{
 }
 .headshot {
     padding: 20px;
-    width: 350px;
-    height: 350px;
+    width: 550px;
+    height: 550px;
     border-radius: 50%;
     object-position: justify;
     object-fit: cover;
@@ -185,7 +185,7 @@ h4 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-    padding: 30px;
+    padding: 50px 30px;
 }
 
 .gallery-grid figure {
@@ -202,7 +202,7 @@ h4 {
 
 .gallery-grid figcaption {
     opacity: 0;
-    font-size: 15px;
+    font-size: 12px;
     color: rgba(77, 77, 77, 0.714);
     margin-top: 8px;
     line-height: 1.4;
