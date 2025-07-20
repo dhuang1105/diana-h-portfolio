@@ -110,7 +110,7 @@ nav a:hover{
     display: block;
     box-shadow: 0 4px 12px rgba(169, 81, 10, 0.25);
     border: none;
-    background-color: transparent;
+    background-color: red;
 }
 
 .all-text {
