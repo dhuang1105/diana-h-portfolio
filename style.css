@@ -101,16 +101,15 @@ nav a:hover{
     text-align: left;
 }
 .headshot {
-    /*padding: 20px;*/
     width: 500px;
     height: 500px;
     border-radius: 50%;
     object-position: center;
     object-fit: cover;
     display: block;
-    box-shadow: 0 4px 12px rgba(169, 81, 10, 0.25);
+    box-shadow: 0 6px 12px rgba(169, 81, 10, 0.25);
     border: none;
-    background-color: red;
+    background-color: transparent;
 }
 
 .all-text {
