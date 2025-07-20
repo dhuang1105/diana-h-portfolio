@@ -1,7 +1,7 @@
 body {
     background-color:#ffffff;
     color: #000000;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -102,12 +102,13 @@ nav a:hover{
 }
 .headshot {
     padding: 20px;
-    width: 550px;
-    height: 550px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     object-position: justify;
     object-fit: cover;
     display: block;
+    box-shadow: 0 20px 8px rgba(169, 81, 10, 0.25);
 
 }
 
