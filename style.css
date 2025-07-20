@@ -101,7 +101,7 @@ nav a:hover{
     text-align: left;
 }
 .headshot {
-    padding: 20px;
+    /*padding: 20px;*/
     width: 500px;
     height: 500px;
     border-radius: 50%;
@@ -109,7 +109,8 @@ nav a:hover{
     object-fit: cover;
     display: block;
     box-shadow: 0 4px 12px rgba(169, 81, 10, 0.25);
-
+    border: none;
+    background-color: transparent;
 }
 
 .all-text {
