@@ -105,10 +105,10 @@ nav a:hover{
     width: 500px;
     height: 500px;
     border-radius: 50%;
-    object-position: justify;
+    object-position: center;
     object-fit: cover;
     display: block;
-    box-shadow: 0 20px 8px rgba(169, 81, 10, 0.25);
+    box-shadow: 0 4px 12px rgba(169, 81, 10, 0.25);
 
 }
 
