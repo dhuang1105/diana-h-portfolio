@@ -105,40 +105,12 @@ nav a:hover{
 
 
 .highlights-title {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     letter-spacing: 2px;
-    color: #666666;
+    color: #2e3d39ac;
     padding: 4rem 2rem;
     text-align: center;
 }
-
-.about-images {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-row {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-.about-images img {
-    width: 250px;
-    margin: 0 10px;
-}
-
-.about-images figcaption{
-    text-align: center;
-    max-width: 90%;
-    font-size: 15px;
-    color:rgba(77, 77, 77, 0.714);
-    margin-top: 8px;
-}
-
 
 .highlights-grid {
     display: grid;
@@ -206,7 +178,7 @@ nav a:hover{
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     display: flex;
     align-items: center;
-    padding: 0 6%;
+    padding: 0;
 }
 
 .bg-watermark-text {
@@ -221,11 +193,11 @@ nav a:hover{
     user-select: none;
     pointer-events: none;
     white-space: nowrap;
-    margin: 0
+    margin: 0;
 }
 
 .hero-image {
-    height: 100%;
+    height: 120%;
     width: auto;
     object-fit: contain;
     display: block;
@@ -246,22 +218,24 @@ nav a:hover{
 .hero-text {
     position: relative;
     z-index: 3; /* Sits ON TOP of portrait image */
-    padding: 4rem;
+    padding: 5rem;
     max-width: 480px;
+    top: 20%;
   }
 
 .hero-title {
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: bold;
-    color: rgb(255, 255, 255);
+    color: #2e3d39ac;
     margin-bottom: 1rem;
 }
 
 .hero-bio {
     font-size: 1.2rem;
-    color: #2e3d39;
-    max-width: 600px;
+    color: #ffffff;
+    max-width: 430px;
     line-height: 1.5;
+    white-space: normal;
 }
 
 .explore-bar {
@@ -271,9 +245,9 @@ nav a:hover{
 }
 
 .explore-title {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     letter-spacing: 2px;
-    color: #666666;
+    color: #2e3d39ac;
 }
 
 .explore-grid {
@@ -290,8 +264,8 @@ nav a:hover{
 }
 
 .explore-image {
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
     object-fit: contain; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     color: #919682
