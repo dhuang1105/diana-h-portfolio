@@ -243,9 +243,9 @@ h3 {
   }
 
 .explore-bar {
-        text-align: center;
-        padding: 3rem 1 rem;
-        background-color: #ffffff;
+    text-align: center;
+    padding: 3rem 1 rem;
+    background-color: #ffffff;
 }
 
 .explore-title {
@@ -271,7 +271,6 @@ h3 {
     width: 120px;
     height: 120px;
     object-fit: cover; /* Prevents your photo from being squished or stretched */
-    border-radius: 50%; /* Crops JPG/PNG square photos into perfect circles */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
