@@ -238,6 +238,21 @@ body.gallery-page nav a {
     display: block;
 }
 
+@media (max-width: 768px) {
+    .hero-image {
+        width: 100%;
+        /* Limit height so it doesn't overpower mobile screen height */
+        height: 50vh; 
+        max-height: 400px;
+        
+        /* Ensures the photo maintains aspect ratio without distorting */
+        object-fit: cover; 
+        
+        /* Shifts focus to top of image (head/upper body) instead of middle */
+        object-position: center 20%; 
+    }
+}
+
 .hero-image-wrapper {
     position: absolute;
     bottom: 0;
