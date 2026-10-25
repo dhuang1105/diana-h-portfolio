@@ -95,7 +95,11 @@ nav a {
   }
 
 nav a:hover{
-    color: #000000;
+    color: #2e3d39ac;
+}
+
+body.gallery-page nav a {
+    color: #2e3d39ac;
 }
 
 .all-text {
@@ -108,41 +112,72 @@ nav a:hover{
     font-size: 1.5rem;
     letter-spacing: 2px;
     color: #2e3d39ac;
-    padding: 4rem 2rem;
     text-align: center;
+    margin-bottom: 0.5rem;
 }
 
 .highlights-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px 50px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
     padding: 50px 0;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .highlights-grid figure {
+    position: relative;
     margin: 0;
-    text-align: center;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
 .highlights-grid img {
     width: 100%;
     aspect-ratio: 3 / 2;
     object-fit: cover;
-    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
 }
 
 .highlights-grid figcaption {
-    font-size: 15px;
+    margin-top: 0.5rem;
+    display: flex;
     color: rgba(77, 77, 77, 0.714);
-    margin-top: 8px;
-    line-height: 1.4;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.highlights-grid figure:hover img {
+    transform: scale(1.05);               /* Subtle zoom effect on image */
+}
+
+.highlights-grid figure:hover figcaption {
+    opacity: 1;                           /* Shows caption on hover */
+    transform: translateY(0);             /* Moves into place */
+}
+
+/* Optional Mobile Scaling: Reduces gap and text size on small screens so 3 columns fit comfortably */
+@media (max-width: 768px) {
+    .highlights-grid {
+        gap: 0.5rem;                       /* Shrinks spacing between images on mobile */
+        padding: 20px 0;
+    }
+
+    .highlights-grid figcaption {
+        padding: 0.5rem;
+        font-size: 0.75rem;                /* Scales down text so captions fit in tight cards */
+    }
 }
 
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-    padding: 50px 30px;
+    padding: 90px 30px;
 }
 
 .gallery-grid figure {
@@ -240,7 +275,7 @@ nav a:hover{
 
 .explore-bar {
     text-align: center;
-    padding: 3rem 1 rem;
+    padding: 2rem 1rem;
     background-color: #ffffff;
 }
 
