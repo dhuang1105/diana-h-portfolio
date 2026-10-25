@@ -207,3 +207,37 @@ h3 {
     opacity: 1;
     transition: opacity 0.3s ease;
 }
+
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 85vh;
+    background-color: aliceblue;
+    overflow: hidden;
+}
+
+.bg-watermark-text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16vw;
+    font-weight: 900;
+    color: rgba(177, 98, 34, 0.45);
+    z-index: 1;
+}
+
+.hero-image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 90%;
+    z-index: 2; /* Sits ON TOP of background text */
+  }
+
+.hero-text {
+    position: relative;
+    z-index: 3; /* Sits ON TOP of portrait image */
+    padding: 4rem;
+  }
