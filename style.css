@@ -261,10 +261,15 @@ h3 {
     gap: 2.5rem;             /* Space between destination items */
     flex-wrap: wrap;         /* Allows items to wrap on mobile screens */
 }
+.explore-item {
+    width: 120px;
+    height: 120px;
+    object-fit: cover; /* Prevents your photo from being squished or stretched */
+    border-radius: 50%; /* Crops JPG/PNG square photos into perfect circles */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-.destination-item:hover .dest-icon-img {
-    transform: scale(1.25);
-    /* Changes image tone to gold/yellow using CSS filters */
-    filter: invert(68%) sepia(85%) saturate(950%) hue-rotate(350deg) brightness(98%);
-    transition: transform 0.3s ease, filter 0.3s ease;
+.explore-item:hover .explore-item {
+    transform: scale(1.15); /* Smoothly zooms in by 15% */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds depth on hover */
 }
