@@ -1,81 +1,94 @@
 body {
     background-color:#ffffff;
     color: #000000;
-    font-family: Georgia, 'Times New Roman', Times, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
 }
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 40px;
+    scroll-padding-top: 70px;
 }
+
 section {
-    padding: 20px 30px;
+    padding: 3rem 5%;
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 0.75rem;
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 1.25rem;
     font-weight: normal;
     line-height: 1.5;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 nav {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    background-color: rgba(169, 81, 10, 0.25);
     transition: background-color 0.3s ease;
     z-index: 1000; /*Ensures the navbar is above other content*/
     position: fixed;
     top: 0;
+    flex-direction: column;
 }
 
 nav.scrolled {
-    background-color: rgb(177, 98, 34);
+    background-color: #9b9f92bb;
 }
 
 nav.scrolled a {
     color: #ffffff;
 }
 
-.nav-left, .nav-right {
+.nav-right {
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
+    padding: 0.2rem 2.5rem;   
 }
 
-.nav-left ul {
-    display: flex;
-    list-style-type: none;
-    gap: 1px;
-    padding: 0;
-    padding-left: 40px;
-    margin: 0px;
-  }
-  
 .nav-right ul {
     display: flex;
     align-items: center;
-    gap: 1px;
+    list-style-type: none;
+    gap: 1.25rem;
     padding: 0;
-    padding-right: 40px;
-    margin: 0;
+    margin: 0px;
   }
 
-nav li {
-    list-style: none;
-    margin: 0 20px;
+.nav-left {
+    display: flex;
+    justify-content: center;
+    padding: 0.3rem 2.5rem;
+    order: 1; 
   }
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem; /*space between items*/
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    }
 
 nav a {
     text-decoration: none;
-    color: rgba(185, 98, 26);
+    color: #ffffff;
     padding: 10px 15px;
     display: inline-block;
     transition: color 0.3s ease;
@@ -85,42 +98,18 @@ nav a:hover{
     color: #000000;
 }
 
-.home-container {
-    display: flex;
-    gap: 30px;
-    padding: 20px;
-    align-items: center;
-    margin: 50px 70px 0;
-}
-.home-image{
-    flex: 0;
-}
-.home-text{
-    flex: 1;
-    min-width: 200px;
-    text-align: left;
-}
-.headshot {
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    object-position: center;
-    object-fit: cover;
-    display: block;
-    box-shadow: 0 6px 12px rgba(169, 81, 10, 0.25);
-    border: none;
-    background-color: transparent;
-}
-
 .all-text {
     margin: 30px;
     line-height: 2;
 }
 
-h3 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
+
+.highlights-title {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: #666666;
+    padding: 4rem 2rem;
+    text-align: center;
 }
 
 .about-images {
@@ -208,30 +197,31 @@ h3 {
     transition: opacity 0.3s ease;
 }
 
-.hero {
+.hero-section {
     position: relative;
     width: 100%;
-    min-height: 85vh;
-    background-color: aliceblue;
+    height: 85vh;
+    background-color: #b0b4a4;
     overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    display: flex;
+    align-items: center;
+    padding: 0 6%;
 }
 
 .bg-watermark-text {
     position: absolute;
-    top: 10%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 16vw;
+    font-size: clamp(5rem, 15vw, 13rem);
     font-weight: 900;
-    color: rgba(177, 98, 34, 0.45);
+    color: rgba(255, 255, 255, 0.339); /* Translucent white for subtle contrast */    z-index: 1;
     z-index: 1;
-}
-
-.hero {
-    position: relative;
-    height: 80vh;            /* Gives the hero section 80% of the screen height */
-    min-height: 500px;       /* Prevents it from shrinking too small on laptop screens */
-    overflow: hidden;        /* Keeps background text/images contained */
+    user-select: none;
+    pointer-events: none;
+    white-space: nowrap;
+    margin: 0
 }
 
 .hero-image {
@@ -257,7 +247,22 @@ h3 {
     position: relative;
     z-index: 3; /* Sits ON TOP of portrait image */
     padding: 4rem;
+    max-width: 480px;
   }
+
+.hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-bottom: 1rem;
+}
+
+.hero-bio {
+    font-size: 1.2rem;
+    color: #2e3d39;
+    max-width: 600px;
+    line-height: 1.5;
+}
 
 .explore-bar {
     text-align: center;
