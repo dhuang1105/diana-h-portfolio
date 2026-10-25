@@ -227,6 +227,19 @@ h3 {
     z-index: 1;
 }
 
+.hero {
+    position: relative;
+    height: 80vh;            /* Gives the hero section 80% of the screen height */
+    min-height: 500px;       /* Prevents it from shrinking too small on laptop screens */
+    overflow: hidden;        /* Keeps background text/images contained */
+}
+
+.hero-image {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
 .hero-image-wrapper {
     position: absolute;
     bottom: 0;
@@ -234,7 +247,10 @@ h3 {
     transform: translateX(-50%);
     max-height: 90%;
     z-index: 2; /* Sits ON TOP of background text */
-  }
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;  /* Aligns image to the bottom */
+}
 
 .hero-text {
     position: relative;
@@ -270,11 +286,12 @@ h3 {
 .explore-image {
     width: 120px;
     height: 120px;
-    object-fit: cover; /* Prevents your photo from being squished or stretched */
+    object-fit: contain; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .explore-item:hover .explore-image {
     transform: scale(1.15); /* Smoothly zooms in by 15% */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds depth on hover */
+    filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.15));
+
 }
