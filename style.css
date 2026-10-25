@@ -241,3 +241,30 @@ h3 {
     z-index: 3; /* Sits ON TOP of portrait image */
     padding: 4rem;
   }
+
+.explore-bar {
+        text-align: center;
+        padding: 3rem 1 rem;
+        background-color: #ffffff;
+}
+
+.explore-title {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: #666666;
+}
+
+.explore-grid {
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center;
+    gap: 2.5rem;             /* Space between destination items */
+    flex-wrap: wrap;         /* Allows items to wrap on mobile screens */
+}
+
+.destination-item:hover .dest-icon-img {
+    transform: scale(1.25);
+    /* Changes image tone to gold/yellow using CSS filters */
+    filter: invert(68%) sepia(85%) saturate(950%) hue-rotate(350deg) brightness(98%);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
