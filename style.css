@@ -261,7 +261,13 @@ h3 {
     gap: 2.5rem;             /* Space between destination items */
     flex-wrap: wrap;         /* Allows items to wrap on mobile screens */
 }
+
 .explore-item {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.explore-image {
     width: 120px;
     height: 120px;
     object-fit: cover; /* Prevents your photo from being squished or stretched */
@@ -269,7 +275,7 @@ h3 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.explore-item:hover .explore-item {
+.explore-item:hover .explore-image {
     transform: scale(1.15); /* Smoothly zooms in by 15% */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds depth on hover */
 }
