@@ -3,10 +3,35 @@
 <head>
     <meta charset="UTF-8"><!--tells browser UTF-8 (supports most characters)-->
     <title>Diana Huang Portfolio</title>
-    <link rel="stylesheet" href="style.css"><!--always link in head-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><!--link to font for icons-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap/dist/css/jsvectormap.min.css">
+    
+    <!-- JS Libraries (All deferred so they load in order) -->
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap/dist/js/jsvectormap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap/dist/maps/world.js" defer></script>
     <script src="script.js" defer></script>
 </head>
+
+<section class="travel"> 
+    <div id="world-map"></div>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <span class="stat-label">COUNTRIES VISITED</span>
+            <span class="stat-number">15+</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-label">TOURNAMENTS PLAYED</span>
+            <span class="stat-number">24+</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-label">PHOTOS TAKEN</span>
+            <span class="stat-number">800+</span>
+        </div>
+    </div>
+</section>
+
 <body class="gallery-page">
     <nav class="navbar">
         <div class="nav-left">
@@ -90,8 +115,8 @@
             </figure>
 
             <figure>
-                <img src="gallery/Daniel.JPG" alt="Santa Clara player catches">
-                <figcaption>Santa Clara player catches</figcaption>
+                <img src="gallery/Pigeon.JPG" alt="Penn State player skies opponent">
+                <figcaption>Penn State player skies opponent</figcaption>
             </figure>
 
             <figure>
